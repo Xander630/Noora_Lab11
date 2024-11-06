@@ -14,13 +14,16 @@ while True:
     Again = input("Do you want to enter another grade? (yes/no): ")
     if Again.lower() == "no":
         result = sum(Grades) / students
-        print("The Average Grade is: ", result)
-        print("The Number of Students Passed: ", studentspassed)
+        print(f"The Average Grade is {result:.2f}")
+        print("The Number of Students:",students)
+        print("The Number of Students Passed:",studentspassed)
         Percentage = (studentspassed / students) * 100
-        print(f"The Passing Percentage is: {Percentage:2f}%")
+        print(f"The Passing Percentage is {Percentage:.2f}%")
         break 
-    else:
+    elif Again.lower() == "yes":
         continue
-        
+    else:
+        print("Invalid Input please enter yes or no")
+        break
     
     
