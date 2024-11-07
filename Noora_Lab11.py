@@ -2,7 +2,7 @@ Grades = []
 students = 0
 studentspassed = 0
 while True:
-    grade = int(input("Enter a Student Grade : "))
+    grade = float(input("Enter a Student Grade : "))
     if grade < 40 or grade > 100:
         print("Invalid Grade")
         break
